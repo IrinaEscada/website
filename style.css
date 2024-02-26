@@ -264,7 +264,7 @@ html {
 .promo {
     width: 100%;
     height: 700px;
-    background-image: url(img/dlyaofisa.jpg);
+    background-image: url(img/elegant.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -314,7 +314,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 
 .promo_card {
@@ -333,9 +333,9 @@ html {
 
 .promo_card_img {
     position: absolute;
-    left: -25px;
+    left: -10px;
     bottom: 5px;
-    width: 120px;
+    width: 100px;
     height: 80px;
     -webkit-transform: skew(10deg);
     transform: skew(10deg);
@@ -352,9 +352,9 @@ html {
 }
 
 .promo_card_text {
-    padding-left: 72px;
+    padding-left: 92px;
     padding-top: 15px;
-    font-family: 'Montserrat';
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
 }
@@ -369,17 +369,17 @@ html {
 
 .promo_card_cost {
     position: absolute;
-    left: -10px;
+    left: 10px;
     bottom: 5px;
-    width: 90px;
+    width: 80px;
     -webkit-transform: skew(10deg);
     transform: skew(10deg);
 }
 
 .promo_btn {
-    width: 400px;
+    width: 300px;
     height: 82px;
-    background-image: linear-gradient(52deg, #dbc548 0%, #f8e993 100%);
+    background-image: linear-gradient(52deg, #048a09 0%, #19e549 100%);
     -webkit-box-shadow: 0px 6px 0px 0px rgba(255,144,0,0.004), 0px 18px 51px 0px rgba(255,84,0,0.54), inset 0px 4px 7px 0px rgba(255,225,134,0.57);
     box-shadow: 0px 6px 0px 0px rgba(255,144,0,0.004), 0px 18px 51px 0px rgba(255,84,0,0.54), inset 0px 4px 7px 0px rgba(255,225,134,0.57);
     color: #000;
@@ -420,12 +420,38 @@ html {
     width: 60px;
 }
 
+.btn-general:hover {
+    -webkit-transform: translate(-5px, -5px);
+    transform: translate(-5px, -5px);
+    -webkit-box-shadow: 0 7px 0 #08975e;
+    box-shadow: 0 7px 0 #08975e;
+}
+
+.header-btn {
+    position: absolute;
+    z-index: 2;
+    bottom: 30%;
+    left: calc(50% - 600px);
+    padding: 10px;
+    display: block;
+}
+
+.btn-general {
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: #16d688;
+    color: #ffffff;
+    border-radius: 20px;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
 .promo_alert {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 14px;
     color: #131212;
-    margin-top: 25px;
+    margin-top: 125px;
     text-transform: uppercase;
 }
 
@@ -586,9 +612,9 @@ html {
 }
 
 .description {
-    font-family: 'Montserrat';
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 5px;
     text-transform: uppercase;
     -webkit-transform: translateX(-70px);
@@ -733,6 +759,12 @@ div {
 .title {
     font-size: 46px;
 }
+
+.header-btn {
+    font-size: 27px;
+    left: calc(50% - 149px);
+}
+
 }
 
 @media (max-width: 1050px) {
@@ -755,6 +787,9 @@ div {
 
 .whatsapp {
     width: 140px;
+}
+.header-btn {
+    bottom: 36%;
 }
 }
 
@@ -840,7 +875,7 @@ div {
 }
 
 .promo {
-    background-image: url(img/dlyaofisa.jpg);
+    background-image: url(img/fonstol.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -926,7 +961,7 @@ div {
 @media (max-width: 615px) {
 
 .promo {
-    background-image: url(img/dlyaofisa.jpg);
+    background-image: url(img/foni.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -954,7 +989,7 @@ div {
 @media (max-width: 576px) {
 
 .promo {
-    background-image: url(img/dlyaofisa.jpg);
+    background-image: url(img/foni.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -978,7 +1013,7 @@ div {
 @media (max-width: 460px) {
 
 .promo {
-    background-image: url(img/dlyaofisa.jpg);
+    background-image: url(img/foni.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -1039,3 +1074,55 @@ div {
     text-transform: uppercase;
 }
 }
+
+@media (max-width: 320px) {
+
+    .title {
+        font-size: 20px;
+    }
+    
+    .subtitle {
+        font-size: 18px;
+    }
+    
+    .promo_alert {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        color: #000000;
+        margin-top: 25px;
+        text-transform: uppercase;
+    }
+
+    .promo {
+        background-image: url(img/foni.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        height: 960px;
+        padding-top: 100px;
+    }
+    
+    .promo_wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    .promo_card {
+        margin: 7px 0;
+    }
+    
+    .promo_btn {
+        -webkit-box-shadow: 0px 6px 0px 0px rgba(255,144,0,0.004), 0px 18px 51px 0px rgba(255,85,0,0.329), inset 0px 4px 7px 0px rgba(255,225,134,0.57);
+        box-shadow: 0px 6px 0px 0px rgba(255,144,0,0.004), 0px 18px 51px 0px rgba(255,85,0,0.329), inset 0px 4px 7px 0px rgba(255,225,134,0.57);
+    }
+    
+    .promo_btn {
+        margin: 24px auto 0 auto;
+    }
+    }
