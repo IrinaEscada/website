@@ -875,7 +875,7 @@ div {
 }
 
 .promo {
-    background-image: url(img/fonstol.jpg);
+    background-image: url(img/elegant.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -961,7 +961,7 @@ div {
 @media (max-width: 615px) {
 
 .promo {
-    background-image: url(img/foni.jpg);
+    background-image: url(img/elegant.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -989,7 +989,7 @@ div {
 @media (max-width: 576px) {
 
 .promo {
-    background-image: url(img/foni.jpg);
+    background-image: url(img/elegant.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -1013,7 +1013,7 @@ div {
 @media (max-width: 460px) {
 
 .promo {
-    background-image: url(img/foni.jpg);
+    background-image: url(img/elegant.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -1095,7 +1095,7 @@ div {
     }
 
     .promo {
-        background-image: url(img/foni.jpg);
+        background-image: url(img/elegant.jpg);
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
