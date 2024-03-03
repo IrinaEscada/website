@@ -134,7 +134,7 @@ html {
 }
 
 .logo_text {
-    font-family: 'Oswald';
+    font-family: 'fantasy';
     font-size: 25px;
     font-weight: 500;
     padding: 5px 0 0 5px;
@@ -264,7 +264,7 @@ html {
 .promo {
     width: 100%;
     height: 700px;
-    background-image: url(img/elegant.jpg);
+    background-image: url(img/arrangement.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -333,10 +333,10 @@ html {
 
 .promo_card_img {
     position: absolute;
-    left: -10px;
+    left: 5px;
     bottom: 5px;
-    width: 100px;
-    height: 80px;
+    width: 80px;
+    height: 70px;
     -webkit-transform: skew(10deg);
     transform: skew(10deg);
 }
@@ -370,8 +370,9 @@ html {
 .promo_card_cost {
     position: absolute;
     left: 10px;
-    bottom: 5px;
+    bottom: 3px;
     width: 80px;
+    height: 70px;
     -webkit-transform: skew(10deg);
     transform: skew(10deg);
 }
@@ -437,7 +438,7 @@ html {
 }
 
 .btn-general {
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     background-color: #16d688;
     color: #ffffff;
