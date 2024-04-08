@@ -42,16 +42,16 @@
  <noscript><div><img src="https://mc.yandex.ru/watch/93239571" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
  <!-- /Yandex.Metrika counter -->
 
- <div class="overlay">
-    <div class="modal">
-        <div class="modal_text"> Напишите:</div>
-            <a href="https://t.me/+79119611885" class="telegram_modal">Telegram</a>
-            <a href="whatsapp://send?phone=+79119611885" class="whatsapp_modal">WhatsApp</a>
-            <a href="#" class="close">Закрыть</a>
-    </div>
- </div>
-
-
+ <div class="modal">
+    <form id="modal_form" name="modal_form" class="modal_form">
+        <div class="close_a">&times;</div>
+        <div class="modal_title">Оставьте ваши контактные данные, чтобы мы могли с вами связаться</div>
+        <input name="name" class="modal_input" placeholder="Введите ваше имя" type="text">
+        <input name="phone" class="modal_input" placeholder="Введите ваш номер телефона" type="text">
+        <button class="btn_modal">Отправить</button>
+    </form>
+</div>
+<div class="all">
 <header id="header" class="header">
     <div id="header__particles"></div>
     <div class="container_fluid">
@@ -104,8 +104,12 @@
                 <div class="promo_card_text">Подберу <span>хостинг </span> и домен</div>
             </div>
         </div>
-        <a href="#contacts" class="header-btn btn-general" onclick="yaCounter64460950.reachGoal('order'); return true;">Заказать верстку</a>
-        <div class="promo_alert">*Или позвоните по номеру:<br><a href="tel:8119611885">→8 911 961 18 85</a></div>
+
+        
+        <button class="button" type="button">
+            Рассчитать стоимость
+        </button>
+        <div class="promo_alert">*Или позвоните по номеру:<br><a class="promo_tel" href="tel:8119611885">→8 911 961 18 85</a></div>
     </div>
 
     <a class="styked_phone" href="tel:89119611885">
@@ -136,6 +140,20 @@
     </div>
 </div>
 
+<!-- https://mkotelnikov.ru/script/cursor-ink -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+          </filter>
+        </defs>
+      </svg>
+
 <footer class="footer">
     <div class="container_fluid">
         <div class="footer_wrap">
@@ -155,24 +173,51 @@
                 <a href="tel:89119611885" class="phone phone_footer">8 911 961 18 85</a>
                 <div class="phone_text_wrap">
                     <div class="online"></div>
-                    <div class="phone_text phone_text_footer">С 10:00 до 21:05</div>
+                    <div class="phone_text phone_text_footer">С 10:00 до 21:00</div>
                 </div>
             </div>
         </div>
     </div>
 
 </footer>
+</div>
+
+<div class="block_u">
+    <div class="modal_window">
+        <a class="modal_btn telegram_color" href="https://t.me/Irina_escada">Написать в Telegram</a>
+        <a class="modal_btn vk_color" href="https://vk.com/escadaa">Написать в VK</a>
+        <a class="modal_btn wts_color" href="https://wa.me/79119611885">Написать в WhatsApp</a>
+        <a class="btn modal_btn" href="#">Закрыть</a>
+    </div>
+</div>
 
 
 
-    <script src="./js/script.js"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/particles.min.js"></script>
-     <!--     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
-     <!-- <script src="js/libs.min.js"></script> -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+<script>
+    const button = document.querySelector('.button');
+    const blockU = document.querySelector('.block_u');
+    const btn = document.querySelector('.btn');
+
+  button.onclick = function() {
+    blockU.style.display = 'flex';
+  }
+
+
+  btn.onclick = function() {
+    blockU.style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    if (event.target === blockU) {
+        blockU.style.display = 'none';
+    }
+  }
+</script>
 
 </body>
 </html>
+
+
+
+
+
