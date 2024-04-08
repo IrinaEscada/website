@@ -430,6 +430,7 @@ close {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    text-align: center;
 }
 
 .phone {
@@ -631,10 +632,6 @@ promo_btn::before {
     display: block;
     margin-top: 5px;
     text-decoration: none;
-}
-
-.promo_tel {
-    
 }
 
 .styked_phone {
