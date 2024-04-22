@@ -498,7 +498,7 @@ close {
 
 .container {
    width: 1170px;
-    margin: 0 auto;
+  
 }
 
 .title {
@@ -693,6 +693,11 @@ promo_btn::before {
     width: 100%;
     padding: 50px 0 50px 0;
     min-height: 400px;
+}
+
+.container_fore {
+    width: 1170px;
+    margin: 0 auto;
 }
 
 .text-centr {
